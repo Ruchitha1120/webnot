@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendee Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Attendee Management</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="tasks.html">Tasks</a>
+    </nav>
+  </header>
+  <main>
+    <section id="attendee-management">
+      <h2>Attendee Management</h2>
+      <form id="attendee-form">
+        <input type="text" id="attendee-name" placeholder="Attendee Name" required>
+        <input type="email" id="attendee-email" placeholder="Email Address" required>
+        <button type="submit">Add Attendee</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Assign to Event</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="attendee-list"></tbody>
+      </table>
+      <h3>Assign Attendees to Tasks</h3>
+      <form id="assign-attendee-form">
+        <select id="event-selector" required>
+          <option value="" disabled selected>Select Event</option>
+        </select>
+        <select id="attendee-selector" required>
+          <option value="" disabled selected>Select Attendee</option>
+        </select>
+        <select id="task-selector" required>
+          <option value="" disabled selected>Select Task</option>
+        </select>
+        <button type="submit">Assign</button>
+      </form>
+    </section>
+  </main>
+  <script src="attendees.js"></script>
+</body>
+</html>

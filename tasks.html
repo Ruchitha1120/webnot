@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Task Tracker</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="attendees.html">Attendees</a>
+    </nav>
+  </header>
+  <main>
+    <section id="task-tracker">
+      <h2>Task Tracker</h2>
+      <form id="task-filter-form">
+        <select id="event-filter" required>
+          <option value="" disabled selected>Select Event</option>
+        </select>
+        <button type="submit">Filter Tasks</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Task Name</th>
+            <th>Deadline</th>
+            <th>Status</th>
+            <th>Assigned To</th>
+            <th>Update Status</th>
+          </tr>
+        </thead>
+        <tbody id="task-list"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="tasks.js"></script>
+</body>
+</html>

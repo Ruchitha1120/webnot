@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav button {
+    background-color: #4cacaf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  nav button:hover {
+    background-color: #4cacaf;
+  }
+  
+  /* Main content area */
+  main {
+    padding: 20px;
+  }
+  
+  /* Page sections */
+  .page {
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Form styles */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  form input,
+  form select,
+  form button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #4cacaf;
+    color: white;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #4cacaf;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4cacaf;
+    color: white;
+  }
+  
+  td button {
+    background-color: #4cacaf;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  td button:hover {
+    background-color: #4cacaf;
+  }
+  
+  select {
+    width: 100%;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 24px;
+    }
+  
+    nav button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    table, th, td {
+      font-size: 14px;
+    }
+  
+    form input,
+    form select,
+    form button {
+      font-size: 14px;
+    }
+  }
+  
